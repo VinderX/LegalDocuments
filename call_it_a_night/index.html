@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Call It a Night Legal</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #140f09;
+        --card: rgba(255, 255, 255, 0.06);
+        --border: rgba(255, 255, 255, 0.1);
+        --text: #e8ddd0;
+        --muted: rgba(232, 221, 208, 0.62);
+        --accent: rgba(176, 138, 110, 0.22);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Georgia", "Times New Roman", serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 72px 24px 48px;
+      }
+
+      .eyebrow {
+        color: var(--muted);
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin: 0 0 16px;
+      }
+
+      h1 {
+        font-size: 42px;
+        line-height: 1.15;
+        margin: 0 0 16px;
+        font-weight: 400;
+      }
+
+      .intro {
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.7;
+        max-width: 620px;
+        margin: 0 0 32px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+      }
+
+      .card {
+        display: block;
+        padding: 20px;
+        border-radius: 18px;
+        border: 1px solid var(--border);
+        background: var(--card);
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .card:hover {
+        background: var(--accent);
+      }
+
+      .card h2 {
+        margin: 0 0 8px;
+        font-size: 22px;
+        font-weight: 400;
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Call It a Night</p>
+      <h1>Legal Documents</h1>
+      <p class="intro">
+        These pages contain the current Privacy Policy and Terms of Use for Call It a Night.
+      </p>
+
+      <div class="grid">
+        <a class="card" href="./privacy/">
+          <h2>Privacy Policy</h2>
+          <p>How we collect, use, store, and share data.</p>
+        </a>
+
+        <a class="card" href="./terms/">
+          <h2>Terms of Use</h2>
+          <p>The rules, subscription terms, and service boundaries.</p>
+        </a>
+      </div>
+    </main>
+  </body>
+  </html>
